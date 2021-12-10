@@ -29,6 +29,7 @@ class YandexViewController: UIViewController {
         userLocationLayer.setVisibleWithOn(true)
         userLocationLayer.isHeadingEnabled = true
         userLocationLayer.setAnchorWithAnchorNormal(CGPoint(x: 0.5 * mapView!.frame.size.width * scale, y: 0.5 * mapView!.frame.size.height * scale), anchorCourse: CGPoint(x: 0.5 * mapView!.frame.size.width * scale, y: 0.83 * mapView!.frame.size.height * scale))
+        
 
         
         view.addSubview(mapView!)
