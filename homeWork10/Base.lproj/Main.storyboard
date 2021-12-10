@@ -97,8 +97,65 @@
                     <view key="view" contentMode="scaleToFill" id="mjI-DW-mJ2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asd-Lf-enx">
+                                <rect key="frame" x="329" y="176" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="LUy-3d-JPG"/>
+                                    <constraint firstAttribute="height" constant="50" id="uLl-pu-GwB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="minus" catalog="system" title="">
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zoomOutButtonAction:" destination="8Vw-KY-6EK" eventType="touchUpInside" id="3RF-bq-6Xh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anh-Gy-NiQ">
+                                <rect key="frame" x="329" y="106" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="OHd-lO-3IH"/>
+                                    <constraint firstAttribute="height" constant="50" id="fHD-B3-l9t"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title="">
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zoomInButtonAction:" destination="8Vw-KY-6EK" eventType="touchUpInside" id="xmN-FH-RTB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQS-MG-FNd">
+                                <rect key="frame" x="329" y="712" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="5vP-uV-NCQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="Juz-Cd-eRq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="location.fill" catalog="system" title=""/>
+                                <connections>
+                                    <action selector="centerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eeV-WH-zkw"/>
+                                    <action selector="userLocationButtonAction:" destination="8Vw-KY-6EK" eventType="touchUpInside" id="VbI-HF-8l9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FtU-z5-SL1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="anh-Gy-NiQ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="FtU-z5-SL1" secondAttribute="leading" constant="329" id="1vp-uz-qsL"/>
+                            <constraint firstItem="anh-Gy-NiQ" firstAttribute="top" secondItem="FtU-z5-SL1" secondAttribute="top" constant="62" id="46V-6r-DaR"/>
+                            <constraint firstItem="asd-Lf-enx" firstAttribute="leading" relation="lessThanOrEqual" secondItem="FtU-z5-SL1" secondAttribute="leading" constant="329" id="5wI-ni-uta"/>
+                            <constraint firstItem="FtU-z5-SL1" firstAttribute="trailing" secondItem="anh-Gy-NiQ" secondAttribute="trailing" constant="35" id="Llh-qb-ycL"/>
+                            <constraint firstItem="FtU-z5-SL1" firstAttribute="bottom" secondItem="fQS-MG-FNd" secondAttribute="bottom" constant="51" id="XgG-OK-ivP"/>
+                            <constraint firstItem="FtU-z5-SL1" firstAttribute="trailing" secondItem="asd-Lf-enx" secondAttribute="trailing" constant="35" id="ctB-8h-Ixp"/>
+                            <constraint firstItem="fQS-MG-FNd" firstAttribute="leading" relation="lessThanOrEqual" secondItem="FtU-z5-SL1" secondAttribute="leading" constant="329" id="iia-bO-Ueu"/>
+                            <constraint firstItem="asd-Lf-enx" firstAttribute="top" secondItem="anh-Gy-NiQ" secondAttribute="bottom" constant="20" id="jpz-HO-Ve8"/>
+                            <constraint firstItem="FtU-z5-SL1" firstAttribute="trailing" secondItem="fQS-MG-FNd" secondAttribute="trailing" constant="35" id="zXw-JD-4h6"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Yandex" id="djm-F2-63C"/>
                 </viewController>
