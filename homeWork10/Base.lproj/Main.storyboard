@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zNc-Jw-Gqy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Apple-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AppleViewController" customModule="homeWork10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ent-EQ-eeS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </mapView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGv-9P-dCr">
+                                <rect key="frame" x="329" y="176" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="C0v-VU-TvG"/>
+                                    <constraint firstAttribute="height" constant="50" id="onI-oC-B3B"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="minus" catalog="system" title="">
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zoomOutButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2g6-h8-BX1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bo-8e-ErR">
+                                <rect key="frame" x="329" y="712" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cyE-Lk-tRX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="yaR-Ff-Vds"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="location.fill" catalog="system" title=""/>
+                                <connections>
+                                    <action selector="centerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4l-2H-3zf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ich-dX-aKI">
+                                <rect key="frame" x="329" y="106" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FLc-Ry-zZE"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="MAJ-ag-mne"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title="">
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zoomInButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s1f-Ry-z3w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Bo-8e-ErR" secondAttribute="trailing" constant="35" id="05W-Qh-IaK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ent-EQ-eeS" secondAttribute="trailing" id="1Vv-hq-IhJ"/>
+                            <constraint firstItem="Ent-EQ-eeS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="703-Ml-fea"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ich-dX-aKI" secondAttribute="trailing" constant="35" id="It8-Rq-eKp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xGv-9P-dCr" secondAttribute="trailing" constant="35" id="Jgo-Ok-FuW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Ent-EQ-eeS" secondAttribute="bottom" id="pJz-yK-MiE"/>
+                            <constraint firstItem="ich-dX-aKI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="pWE-Qk-fbR"/>
+                            <constraint firstItem="Ent-EQ-eeS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qqn-Fw-mFq"/>
+                            <constraint firstItem="xGv-9P-dCr" firstAttribute="top" secondItem="ich-dX-aKI" secondAttribute="bottom" constant="20" id="yiP-12-Dl2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Bo-8e-ErR" secondAttribute="bottom" constant="51" id="yzr-jP-WJI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Apple" id="OGh-ds-QWp"/>
+                    <connections>
+                        <outlet property="appleMapView" destination="Ent-EQ-eeS" id="cNl-Xd-UbW"/>
+                        <outlet property="centerButton" destination="6Bo-8e-ErR" id="1fq-cf-5nH"/>
+                        <outlet property="zoomInButton" destination="ich-dX-aKI" id="ZBp-7u-e1j"/>
+                        <outlet property="zoomOutButton" destination="xGv-9P-dCr" id="VFy-gU-Ool"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-552" y="352"/>
+        </scene>
+        <!--Yandex-->
+        <scene sceneID="zTT-qT-Id6">
+            <objects>
+                <viewController id="iYM-h5-pjq" customClass="YandexViewController" customModule="homeWork10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mjI-DW-mJ2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FtU-z5-SL1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Yandex" id="djm-F2-63C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C2T-zk-Y16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="-15"/>
+        </scene>
+        <!--Google-->
+        <scene sceneID="U3N-fl-bP2">
+            <objects>
+                <viewController id="8Vw-KY-6EK" customClass="GoogleViewController" customModule="homeWork10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eNV-5e-vnV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmS-QO-Jvb">
+                                <rect key="frame" x="329" y="176" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LST-Mv-Zou"/>
+                                    <constraint firstAttribute="width" constant="50" id="yO4-Qo-YDy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="minus" catalog="system" title="">
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zoomOutButtonAction:" destination="8Vw-KY-6EK" eventType="touchUpInside" id="RGP-je-Kaa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6i-qW-ezC">
+                                <rect key="frame" x="329" y="106" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ekg-Y9-YWK"/>
+                                    <constraint firstAttribute="height" constant="50" id="oce-no-hQe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title="">
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zoomInButtonAction:" destination="8Vw-KY-6EK" eventType="touchUpInside" id="s0G-iH-unN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIc-gD-fMz">
+                                <rect key="frame" x="329" y="712" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oif-gV-Um9"/>
+                                    <constraint firstAttribute="width" constant="50" id="yvg-cQ-kK2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="location.fill" catalog="system" title=""/>
+                                <connections>
+                                    <action selector="centerButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIU-Bq-Fjc"/>
+                                    <action selector="userLocationButtonAction:" destination="8Vw-KY-6EK" eventType="touchUpInside" id="rCV-nM-xQJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yxo-4p-QL7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J6i-qW-ezC" firstAttribute="leading" relation="lessThanOrEqual" secondItem="yxo-4p-QL7" secondAttribute="leading" constant="329" id="OvR-Bc-2Wv"/>
+                            <constraint firstItem="gmS-QO-Jvb" firstAttribute="leading" relation="lessThanOrEqual" secondItem="yxo-4p-QL7" secondAttribute="leading" constant="329" id="POl-uk-Lao"/>
+                            <constraint firstItem="gmS-QO-Jvb" firstAttribute="top" secondItem="J6i-qW-ezC" secondAttribute="bottom" constant="20" id="Piv-hD-GSe"/>
+                            <constraint firstItem="yxo-4p-QL7" firstAttribute="trailing" secondItem="J6i-qW-ezC" secondAttribute="trailing" constant="35" id="Sll-8U-HFA"/>
+                            <constraint firstItem="yxo-4p-QL7" firstAttribute="bottom" secondItem="xIc-gD-fMz" secondAttribute="bottom" constant="51" id="V10-6L-2Mn"/>
+                            <constraint firstItem="xIc-gD-fMz" firstAttribute="leading" relation="lessThanOrEqual" secondItem="yxo-4p-QL7" secondAttribute="leading" constant="329" id="e2u-LQ-9vY"/>
+                            <constraint firstItem="J6i-qW-ezC" firstAttribute="top" secondItem="yxo-4p-QL7" secondAttribute="top" constant="62" id="hQx-r1-72c"/>
+                            <constraint firstItem="yxo-4p-QL7" firstAttribute="trailing" secondItem="xIc-gD-fMz" secondAttribute="trailing" constant="35" id="lia-vc-Ife"/>
+                            <constraint firstItem="yxo-4p-QL7" firstAttribute="trailing" secondItem="gmS-QO-Jvb" secondAttribute="trailing" constant="35" id="odH-uZ-h6b"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google" id="7hP-Uh-3Y0"/>
+                    <connections>
+                        <outlet property="userLocationButton" destination="xIc-gD-fMz" id="rOf-CH-lr0"/>
+                        <outlet property="zoomInButton" destination="J6i-qW-ezC" id="1zH-h0-Rpb"/>
+                        <outlet property="zoomOutButton" destination="gmS-QO-Jvb" id="nc3-py-XBr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPJ-QW-GMS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="-669"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DgI-hD-Htq">
+            <objects>
+                <tabBarController id="zNc-Jw-Gqy" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BQu-Dj-xMs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8Vw-KY-6EK" kind="relationship" relationship="viewControllers" id="S74-Xs-cpa"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="kBM-di-11h"/>
+                        <segue destination="iYM-h5-pjq" kind="relationship" relationship="viewControllers" id="Led-Mg-4Lo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m41-EY-fYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-552" y="-365"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <image name="minus" catalog="system" width="128" height="24"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
